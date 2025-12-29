@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h2>Job Application Form</h2>
+    <form onsubmit="finalValidation(event)">
+        <div><label>TCKN (9 Digits):</label> <input type="text" id="tckn"></div><br>
+        <div><label>Full Name:</label> <input type="text" id="fullName"></div><br>
+        <div><label>Birth Date:</label> <input type="date" id="dob"></div><br>
+        <div><label>Salary Expectation:</label> <input type="number" id="salary"></div><br>
+        <div><label>Experience (Years):</label> <input type="number" id="experience"></div><br>
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <h3>Application Summary</h3>
+    <textarea id="previewBox" rows="10" cols="50" readonly placeholder="Summary..."></textarea>
+
+    <script src="TCKN_validation.js"></script>
+    <script src="FullName_validation.js"></script>
+    <script src="DOB_validation.js"></script>
+    <script src="Salary_validation.js"></script>
+    <script src="Experience_validation.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
